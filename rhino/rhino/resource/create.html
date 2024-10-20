@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/resource/create.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="alert-window" style="display: none;">
+        <p>Element type</p>
+        <div class="content-select" style="border-radius: 10px; display: flex; justify-content: space-around;">
+            <div class="select-type selected" style="border-radius: 10px;">Heading</div>
+            <div class="select-type" style="border-radius: 10px;">Paragraph</div>
+            <div class="select-type" style="border-radius: 10px;">Youtube embed</div>
+        </div>
+        <div style="display: flex; flex-direction: row; justify-content: space-around; position: absolute; bottom: 20px;">
+            <div class="button button-enabled" style="background-color: white;">Done</div>
+            <div class="button button-enabled" style="background-color: white;">Cancel</div>
+        </div>
+    </div>
+    <nav id="navbar">
+        <a style="color: white; font-weight:500; font-size: 2rem; margin-left: 40px; font-family: 'Kanit', sans-serif;">e-material</a>
+        <div class="text-heading enable-edit" id="title" contenteditable="true" style="padding: 0px 15px 0px 15px; border-radius: 25px; width: 250px; color: white; border: 2px solid white;">title</div>
+        <div class="button button-enabled" style="background-color: white; width: 100px;" id="save">Save</div>
+    </nav>
+    <div id="content">
+        <!-- <div class="content-item" style="position: relative;">
+            <div id="edit">
+                <div id="content-add" style="width: 40px; height: 40px; position: absolute; left:50%; border-radius: 5px; background: var(--theme-medium) url(/icons/plus.svg) no-repeat center; background-size: 50%; cursor:pointer;"></div>
+                <div id="content-remove" style="width: 40px; height: 40px; position: absolute; left:calc(50% + 50px); border-radius: 5px; background: var(--theme-medium) url(/icons/trash.png) no-repeat center; background-size: 50%; cursor:pointer;"></div>
+                <div id="content-select" style="right:0px">
+                    <div class="select-type selected">Heading</div>
+                    <div class="select-type">Paragraph</div>
+                    <div class="select-type">Video</div>
+                </div>
+            </div>
+            <div class="text-heading" contenteditable="true">Speaking test sample</div>
+        </div> -->
+    </div>
+    <script src="/js/resource/create.js"></script>
+</body>
+</html>

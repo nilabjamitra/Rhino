@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+:root{
+    --green:#00E77F;
+    --white:#fff;
+    --theme-dark: #007AFF;
+    --theme-medium: #719ce6;
+    --theme-light: #e7f4ff;
+    --light-white:rgb(202, 202, 203);
+    --black:#000000;
+}
+
+/* #007AFF */
+/* 719ce6 */
+
+html, body{
+    background-color: var(--white);
+    color: var(--black);
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+    margin: 0;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
+.button{
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 25px;
+    border-width: 2px;
+    border-color: var( --theme-dark);
+    border-style: solid;
+    padding: 0px 20px 0px 20px;
+    height: 50px;
+    font-size: 1.25em;
+    margin: 0px 20px 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: var(--light-white);
+}
+
+.button-enabled{
+    color: var(--black);
+}
+
+.button-enabled:hover{
+    background-color:var(--theme-dark);
+    box-shadow: 2px 2px 10px var(--theme-medium);
+    color: var(--white);
+}
+
+.button-inverted{
+    background-color: white;
+    color: black;
+}
+
+.button-inverted:hover{
+    background-color:var(--light-white);
+    box-shadow: 2px 2px 10px var(--theme-medium);
+    color: var(--white);
+}
+
+#navbar{
+    height: 100px;
+    z-index: 9;
+    position:sticky;
+    background-color: var( --theme-dark);
+    box-shadow: 0px 2px 5px rgb(104, 104, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box{
+    position: relative;
+    padding: 5px;
+    margin: 5px 10px 5px 5px;
+    height: 130px;
+    width: 130px;
+    background-color: var(--theme-medium);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    font-size: large;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px rgb(196, 196, 196);
+    color: rgb(65, 65, 65);
+    transition: box-shadow 0.2s ease-in-out, width 0.2s ease-in-out, height 0.2s ease-in-out, margin 0.2s ease-in-out;
+}
+
+.box:hover{
+    box-shadow: 1px 1px 10px rgb(147, 147, 147);
+    background-color: var(--theme-dark);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 10px 0 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    height: 50px;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#toolbar{
+    width: 300px;
+    background-color: var(--theme-light);
+    padding-top: 20px;
+}
+
+#list{
+    display: flex;
+    flex: 1;
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
+}

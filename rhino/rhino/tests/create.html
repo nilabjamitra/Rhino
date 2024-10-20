@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create test</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/test/create.css">
+</head>
+<body>
+    <div id="alert-window">
+        <div style="font-size: 2rem; background: url(/icons/alert.svg) no-repeat right; width: 130px;">Alert</div>
+        <p id="alert-text">A few problems need your attention.</p>
+    </div>
+    <div id="navbar">
+        <div style="padding: 0 0 0 40px; font-size: 35px; color: white;">Quiz</div>
+        <div class="button button-enabled button-inverted" id="edit-details" style="width: 150px;">Edit details</div>
+    </div>
+    <div id="content">
+        <div class="left">
+            <div id="question-content" question-type="reading" answer-type="choice" question-id='000' answer-id="0">
+                <div class="preset-type">
+                    <div class="button" style="width: max-content;" id="load-previous">Set same as previous</div>
+                    <div style="display: flex; flex-direction: row;">
+                        <select id="question-type-select">
+                            <option selected value="reading">Reading</option>
+                            <option value="listening">Listening</option>
+                        </select>
+                        <div class="selecthover" hovertext="Question type"></div>
+                    </div>
+                    <div style="display: flex; flex-direction: row;">
+                        <select id="answer-type-select">
+                            <option selected value="choice">Choice</option>
+                            <option value="writing">Writing</option>
+                        </select>
+                        <div class="selecthover" hovertext="Answer type"></div>
+                    </div>
+                </div>
+                <div id="question-num" style="margin: 20px 0 0 20px;">Q.1</div>
+                <textarea id="question-text"></textarea>
+                <div id="audio-type">
+                    <audio id="audio-output" controls=""></audio>
+                    <label for="audio-input" id="audio-input-label" class="button button-enabled">
+                        Choose file
+                        <input id="audio-input" type="file" accept=".mp3">
+                    </label>
+                </div>
+                <div id="question-list">
+                    <div id="question-add-button" class="question-num-icon" style="background-image: url('../icons/plus.svg'); background-size: 60%; background-position: center; background-repeat: no-repeat;"></div>
+                </div>
+            </div>
+            <div id="question-navigator">
+                <div class="button" id="prev-button">Prev</div>
+                <div class="button button-enabled" id="next-button" style="width: 150px;">Add question</div>
+                <div class="button button-enabled" id="save-button">Save</div>
+            </div>
+        </div>
+        <div class="right">
+            <div id="choices">
+                <div class="choice" id="choice-1">
+                    <textarea class="choice-textarea"></textarea>
+                    <div class="choice-options">
+                        <div class="button option option-correct" option="0">Selected as answer</div>
+                    </div>
+                </div>
+                <div class="choice" id="choice-2">
+                    <textarea class="choice-textarea"></textarea>
+                    <div class="choice-options">
+                        <div class="button button-enabled option" option="1">Select as answer</div>
+                    </div>
+                </div>
+                <div class="choice" id="choice-3">
+                    <textarea class="choice-textarea"></textarea>
+                    <div class="choice-options">
+                        <div class="button button-enabled option" option="2">Select as answer</div>
+                    </div>
+                </div>
+                <div class="choice" id="choice-4">
+                    <textarea class="choice-textarea"></textarea>
+                    <div class="choice-options">
+                        <div class="button button-enabled option" option="3">Select as answer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="metadata-content">
+        <div style="font-size: 3rem;margin: 100px 0 40px 0px;">Test details</div>
+        <div id="form">
+            <div id="entry-name">
+                <div>Test name</div>
+                <div>Test duration(in minutes)</div>
+                <div>Passing mark</div>
+                <div>Resource only</div>
+                <div style="line-height: normal;">Test description<br>(optional)</div>
+            </div>
+            <div id="entry-data">
+                <input id="test-name" type="text">
+                <input id="test-duration" type="number">
+                <input id="test-passing" type="text">
+                <input id="resource-only" style="display: flex; align-self: flex-start; height: 30px; width: 30px;"type="checkbox">
+                <textarea id="test-description" style="margin: 10px; padding: 5px 10px 5px 10px; height: 200px; resize: none;border-radius: 20px; font-size: 1.5rem; border-color: var(--theme);"></textarea>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row; margin-top: 60px;">
+            <div class="button button-enabled" id="back-button" style="width: 150px; display: flex; align-self: center;">Back</div>
+            <div class="button button-enabled" id="save-button-final" style="width: 150px; display: flex; align-self: center;">Save</div>
+            <div class="button button-enabled" id="home-button" style="width: 150px; display: flex; align-self: center;">Home</div>    
+        </div>
+    </div>
+    <script src="../js/test/create.js"></script>
+</body>
+</html>

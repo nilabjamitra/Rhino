@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/test/test.css">
+</head>
+<body>
+    <div id="screen" class="screen">
+        <div class="info">
+            <h1 id="testName"></h1>
+            <h2 id="levelInfo"></h2>
+            <h2 id="quesInfo"></h2>
+            <h2 id="timer" style="width: 10%; margin-left: 50px;"></h2>
+        </div>
+        <div id="test">
+            <div id="question-bar">
+                <div id="content">
+                    <div id="question">
+                        <div class="audio-element">
+                            <div class="paused audio-button" id="audio-play-button"></div>
+                            <a></a>
+                        </div>
+                        <p id="question-text"></p>
+                    </div>
+                    <div id="choices" choice_selected=-1></div>
+                </div>
+                <div id="toggle">
+                    <div class="button button-enabled" id="ques-prev">Save & previous</div>
+                    <div class="button button-enabled" id="ques-next">Save & Next</div>
+                    <div class="button button-enabled" id="submit">Submit</div>
+                </div>
+            </div>
+            <div id="question-list">
+            </div>
+        </div>
+    </div>
+    <div id="submit-page" style="display: none;">
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <b style="margin-top:20px; font-size: 1.5em; font-weight: bold;" id="testSubInfo">Are you sure you want to submit? Answers can't be changed once submitted.</b>
+        </div>
+        <div id="attempt-stats">
+            <a>No. of Questions</a>
+            <a>Answered</a>
+            <a>Not Answered</a>
+            <div id="n-ques"></div>
+            <div id="n-ans"></div>
+            <div id="n-nans"></div>
+        </div>
+        <div id="end-buttons">
+            <div id="test-back" class="button button-enabled">Go Back</div>
+            <div id="submit-final" class="button button-enabled">Submit</div>
+        </div>
+    </div>
+    <script src="../js/test/test.js"></script>
+</body>
+</html>

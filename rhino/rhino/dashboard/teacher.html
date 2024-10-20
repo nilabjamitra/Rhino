@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="/css/dashboard/teacherdash.css">
+
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div id="screen">
+        <nav id="navbar">
+            <div id="profile">
+                <div id="profile-picture" style="border-radius: 50%; width: 100px; height:100px; background-image: url(./../icons/profile.jpg); background-size: 150px; background-position: center;"></div>
+                <div id="profile-name" style="font-size: larger; font-weight: 600; margin-top: 15px;"></div>
+                <div id="profile-text" style="font-weight: 500; padding-top: 5px;">Associate Professor<br>NHCE</div>
+            </div>
+            <div id="navbar-router">
+                <div id="home">Home</div>
+                <!-- <div id="assignments">Assignments</div> -->
+                <div id="resources">e-material</div>
+                <div id="grading">Grading</div>
+                <div id="quiz">Quizzes</div>
+            </div>
+            <div id="logout-button" style="justify-self:flex-end;">Logout</div>
+        </nav>
+        <div id="window">
+        </div>
+        <script src="/js/dashboard/teacherdashboard.js"></script>
+    </div>
+    <div id="alert-window" style="display: none; position: absolute; width: 100vw; height: 100vh; top: 0%; background-color: rgba(255, 255, 255, 0.512);">
+        <div id="alert-box">
+            <h1 id="alert-title" style="font-weight: 600;"></h1>
+            <h3 id="alert-text" style="font-weight: 400; margin: 10px 0 0 0;"></h3>
+            <div id="alert-buttons" style="display: flex; margin: 0 0 10px 0; flex-direction: row; justify-content: space-around; flex: 1; align-items: flex-end;">
+                <div class="button button-inverted" style="width: 200px;"></div>
+                <div class="button button-inverted" style="width: 200px;"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="/css/dashboard/teacherdash.css">
+
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div id="screen">
+        <nav id="navbar">
+            <div id="profile">
+                <div id="profile-picture" style="border-radius: 50%; width: 100px; height:100px; background-image: url(./../icons/profile.jpg); background-size: 150px; background-position: center;"></div>
+                <div id="profile-name" style="font-size: larger; font-weight: 600; margin-top: 15px;"></div>
+                <div id="profile-text" style="font-weight: 500; padding-top: 5px;">Student, 3A<br>NHCE</div>
+            </div>
+            <div id="navbar-router">
+                <div id="home">Home</div>
+                <!-- <div>Assignments</div> -->
+                <div id="resources">e-material</div>
+                <!-- <div>Grading</div> -->
+                <div id="quiz">Quizzes</div>
+            </div>
+            <div id="logout-button" style="justify-self:flex-end;">Logout</div>
+        </nav>
+        <div id="window">
+        </div>
+        <script src="/js/dashboard/studentdashboard.js"></script>
+    </div>
+</body>
+
+</html>
